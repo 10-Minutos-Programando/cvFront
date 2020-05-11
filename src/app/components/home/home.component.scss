@@ -1,0 +1,16 @@
+.home{
+     height: 100%;
+    overflow: scroll;
+    .hero, .about{
+        height: 100%;
+        width: 100%;
+        position: sticky;
+        top: 0; 
+    }
+    .hero{
+        background-color: lightgrey;
+    }
+    .about{
+        background-color: lightslategray;
+    }
+}
