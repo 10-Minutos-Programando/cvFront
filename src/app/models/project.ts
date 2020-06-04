@@ -1,11 +1,9 @@
 export class Project {
-    nombre: string;
+    _id: string;
+    titulo: string;
     descripcion: string;
-    imagenes: [];
     url: string;
-    ano: number;
     cliente: string;
-    urlclient: string;
+    url_cliente: string;
     categoria: string;
-    tecnologias: string;
 }

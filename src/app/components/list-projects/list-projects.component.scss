@@ -1,0 +1,51 @@
+.list-projects{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    .proyecto{
+          flex-basis: 98%;
+          padding-left: 8px;
+          padding-right: 8px;
+          height: 100px;
+          background-color: tomato;
+          margin: 1%;
+    }
+}
+
+.filtroCategorias{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media(min-width: 768px)
+{
+    .list-projects{
+        .proyecto{
+          flex-basis: 48%;
+        }    
+    }
+        
+}
+
+@media(min-width: 1120px)
+{
+    .list-projects{
+        .proyecto{
+          flex-basis: 31%;
+        }    
+    }
+        
+}
+

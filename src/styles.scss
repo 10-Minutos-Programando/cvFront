@@ -37,3 +37,85 @@ $cvFront-theme: mat-light-theme($cvFront-primary, $cvFront-accent, $cvFront-warn
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+	font-weight: 400;
+	font-size: 14px;
+	color: #545454;
+	line-height: 22px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+a {
+	color: #545454;
+	text-decoration: none;
+	transition-duration: .2s;
+	-moz-transition-duration: .2s;
+	-webkit-transition-duration: .2s;
+	-o-transition-duration: .2s;
+}
+a:hover {
+	color: #000;
+}
+::selection {
+	color: #000;
+	background: none repeat scroll 0 0 #ffb400;
+}
+::-moz-selection {
+color:#000;
+background: none repeat scroll 0 0 #ffb400;
+}
+* {
+	outline: 0!important;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-webkit-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+}
+
+.content-scroller {
+	position: absolute;
+	left: 200px;
+	right: 0px;
+	overflow: hidden;
+	height: 100%;
+}
+.content-wrapper {
+	width: 7356px;
+	position: absolute;
+	height: 100%;
+	overflow: hidden;
+}
+.content:last-child {
+	width: 1720px;
+	background-color: #000;
+}
+.content {
+	width: 804px;
+	overflow-y: scroll;
+	height: 100%;
+	float: left;
+	-webkit-transition: background 0.3s linear;
+	-moz-transition: background 0.3s linear;
+	-o-transition: background 0.3s linear;
+	-ms-transition: background 0.3s linear;
+	transition: background 0.3s linear;
+}
+.content-active {
+}
+.content:hover .jspVerticalBar, .menu nav:hover .jspVerticalBar {
+	opacity: 1;
+}
+.inner {
+	padding: 70px;
+}
+.inner p {
+	position: relative;
+	padding: 0;
+}

@@ -14,6 +14,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { ListProjectsComponent } from './components/list-projects/list-projects.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { MatListModule } from '@angular/material/list';
     HomeComponent,
     ViewProjectComponent,
     ContactComponent,
-    MainNavComponent
+    MainNavComponent,
+    ListProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { MatListModule } from '@angular/material/list';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

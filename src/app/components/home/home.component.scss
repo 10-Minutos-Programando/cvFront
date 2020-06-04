@@ -1,16 +1,32 @@
 .home{
-     height: 100%;
+    height: 100%;
     overflow: scroll;
-    .hero, .about{
+    .secciones{
         height: 100%;
         width: 100%;
         position: sticky;
-        top: 0; 
+        top: 0;
     }
     .hero{
-        background-color: lightgrey;
+        background-color: papayawhip;
+        &>div{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            background-image: url("/assets/images/fondo.jpg");
+            background-position: center center; 
+            background-size: cover;
+            background-repeat:no-repeat;
+        }
     }
     .about{
-        background-color: lightslategray;
+        background-color: lightgrey;
     }
+    .proyectos{
+        background-color: darkgrey;
+    }
+
 }
