@@ -25,16 +25,11 @@ export class MainNavComponent implements OnInit {
   }
 
 
-
-
   navigateTo($event) {
-    const texto: string = $event.target.offsetParent.attributes[2].value;
-    console.log(texto);
-    const element = document.querySelector('#' + texto);
+
+    //console.log($event.target.hash);
+    const element = document.querySelector($event.target.hash);
     element.scrollIntoView({ behavior: 'smooth' });
-
-
-
   }
 
 

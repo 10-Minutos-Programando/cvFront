@@ -1,3 +1,4 @@
+@import '../../../assets/partials/variables';
 .home{
     height: 100%;
     overflow: scroll;
@@ -8,7 +9,6 @@
         top: 0;
     }
     .hero{
-        background-color: papayawhip;
         &>div{
             align-items: center;
             display: flex;
@@ -20,13 +20,72 @@
             background-position: center center; 
             background-size: cover;
             background-repeat:no-repeat;
+            text-align: center;
+            h2{
+                font-family: $handlee;
+                font-size: 240%;
+                color: white;
+            }
+            h1{
+                font-size: 300%;
+                color: white;
+                font-family: $handlee;
+            }
+            .title{
+                font-size: 140%;
+                color: white;
+            }
         }
     }
     .about{
-        background-color: lightgrey;
+        background-color: white;
+        padding: 40px;
+        .timeline{
+            position:relative;
+            height:  100vh;
+            
+            .line{
+                border-right: 2px solid #aaa;
+                left: 16px;
+                position: absolute;
+                top: 0px;
+                height: 100%;
+            }
+            .listitems{
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px;
+                    li{
+                       margin-bottom: 8px;
+                       &>div{
+                            align-items: center;
+                            display: flex;
+                            .circle{
+                                background-color: rgb(170, 170, 170);
+                                border-radius: 9999px;
+                                height: 32px;
+                                width: 32px;
+                            }
+                            .title{
+                                     flex: 1;
+                                     margin-left: 15px;
+                                     font-size: 150%;
+                                }
+                       }
+                       .description{
+                           margin-top: 15px;
+                           margin-left: 48px;
+                       }
+                    }
+            }
+            
+        }
     }
     .proyectos{
-        background-color: darkgrey;
+        background-color: lightgray;
+        padding: 40px;
+          height: 100vh;
+
     }
 
 }

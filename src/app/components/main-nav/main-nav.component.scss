@@ -1,168 +1,60 @@
+@import '../../../assets/partials/variables';
+
 .sidenav-container {
   height: 100%;
   .sidenav {
-    width: 200px;
+	background-color: $base_color;
+	width: 200px;
+	border-right: 2px solid $acento;
     .mat-toolbar {
-      background: inherit;
-    }
-    .mat-toolbar.mat-primary {
+	  background: inherit;
+	  &:mat-primary {
        top: 0;
        z-index: 1;
     }
+	}
     .menu{
       list-style: none;
-      display: table-cell;
-      vertical-align: middle;
-      width: 100%;
+	  width: 100%;
+	  padding: {
+		  top: 60%;
+	  }
       li{
         text-align: center;
         a{
           display: block;
-          padding: 10px 0px;
+		  padding: 20px 0px 20px 0px; 
           text-decoration: none;
-          font-size: 120%;
-        }
+		  font-size: 120%;
+		  background-color: $base_color;
+		  color: $acento;
+		  border-bottom: 2px solid;
+		  border-color: $base_color;
+		  width: 80%;
+		  margin: 0 auto;
+		  transition: .5s border-bottom;
+		  &:hover{
+			border-color: $acento;
+		}
+		  
+		}
+		
       }
     }
   }
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    height: 64px;
+  }
 }
 
-/* ==========================================================================
-   #Introduction Screen
-   ========================================================================== */
-
-.introduction {
-/*	background: url(../images/profile.jpg)no-repeat right top;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;*/
-	position:relative;
+@media(min-width: 500px)
+{
+	.sidenav-container {
+		.mat-toolbar-row, .mat-toolbar-single-row {
+			height: 0px;
+		}
+	}
 }
-.introduction img {
-	/*position: absolute;*/
-	z-index: -1;
-	height: 100%;
-	width: 100%;
-	float: left;
-}
-.introduction .owl-carousel {
-	height: 100%;
-}
-.introduction .owl-carousel .owl-wrapper-outer {
-	height: 100%;
-}
-.introduction .owl-carousel .owl-wrapper, .introduction .owl-carousel .owl-item {
-	height: 100%;
-}
-.introduction .item {
-	height: 100%;
-}
-.introduction h2 {
-	border: none;
-	color: #FFF;
-	text-transform: uppercase;
-	line-height: 50px;
-	padding-bottom: 0;
-	font-size: 45px;
-	margin-bottom: 35px
-}
-.introduction .inner {
-	margin: 47% 0 0 0;
-	position:absolute;
-	z-index:2;
-}
-.introduction span.title {
-	border-bottom: 1px solid #7a7a7a;
-	border-top: 1px solid #7a7a7a;
-	color: #aeaeae;
-	padding: 15px 0;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	font-size: 13px;
-}
-/* ==========================================================================
-   #About Screen
-   ========================================================================== */
-
-.about {
-	background: tomato;
-	background-size: contain;
-}
-.about .inner {
-	width: 50%
-}
-.about img {
-	position: absolute;
-	z-index: -1;
-	left: 0;
-	top: 0
-}
-.about-con {
-	width: 100%
-}
-.about-con ul {
-	margin: 0;
-	padding: 0;
-	list-style: none
-}
-.about-con ul li {
-	border-bottom: 1px solid #dfdfdf;
-	padding: 12px 0;
-}
-.about-con ul li:first-child {
-	padding: 0 0 12px 0
-}
-.about img.signature {
-	position: inherit;
-	top: auto;
-	margin: 20px 0 0 0;
-}
-
-/* ==========================================================================
-   #Education Screen
-   ========================================================================== */
-.education-con .icon-block i {
-	font-size: 60px;
-	color: #ffb400;
-	margin: 8px 0 0
-}
-.education-con h5 {
-	margin: 5px 0 7px 0
-}
-.education-con span {
-	font-size: 16px;
-	color: #000;
-}
-.education-con strong {
-	font-weight: 500;
-	color: #000;
-	text-transform: uppercase;
-	display: inline-block;
-	margin: 0 0 5px 0
-}
-.education-details {
-	float: left
-}
-.education-details i {
-	transition-duration: .2s;
-	-moz-transition-duration: .2s;
-	-webkit-transition-duration: .2s;
-	-o-transition-duration: .2s;
-}
-.education-details:hover i {
-	font-size: 73px;
-	color: #000;
-}
-.education-details:hover .col-3 {
-	width: 29%;
-	transition-duration: .2s;
-	-moz-transition-duration: .2s;
-	-webkit-transition-duration: .2s;
-	-o-transition-duration: .2s;
-}
-
-
 
 
 
